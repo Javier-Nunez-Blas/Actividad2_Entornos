@@ -1,10 +1,12 @@
-package junit;
+package JUnit5;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import beans.Soldado;
+import clases.Soldado;
+
+
 
 class SoldadoTest extends Soldado{
 

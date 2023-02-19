@@ -1,13 +1,10 @@
+package JUnit5;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import clases.Jugador;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
-
-import beans.Jugador;
 
 class JugadorTest extends Jugador{
 
