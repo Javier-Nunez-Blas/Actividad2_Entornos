@@ -1,16 +1,30 @@
 package clases;
 
 /**
- * 
+ * Esta clase define el objeto soldado
  * @author Javier Nuñez
  * @version 1.0
  */
 
 public class Soldado {
-	   private boolean estaMuerto;
-	   private int numeroBalas;
+	
+	//Atributos de la clase
+	
+    /**
+    * Estado del soldado
+    */
+	
+    private boolean estaMuerto;
+    
+    /**
+    * Numero de balas del soldado
+    */
+    
+    private int numeroBalas;
 	   
 	   
+    //Generamos los getter and setter
+    
 	public boolean getEstaMuerto() {
 		return estaMuerto;
 	}

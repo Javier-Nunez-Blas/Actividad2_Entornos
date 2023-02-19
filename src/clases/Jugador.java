@@ -1,18 +1,34 @@
 package clases;
 
 /**
- * 
+ * Esta clase define al objeto Jugador
  * @author Javier Nuñez
  * @version 1.0
  */
 
 public class Jugador {
+	
+	//Atributos de la clase
+	
+    /**
+    * numero del doral
+    */
     private int dorsal;
+    
+    /**
+     * numero de tarjetas amarillas
+     */
 
     private int numeroTarjetasAmarillas;
-
+    
+    /**
+     * numero de tarjetas rojas
+     */
+    
     private int numeroTarjetasRojas;
 
+    
+    //Generamos los getter and settter
 	public int getDorsal() {
 		return dorsal;
 	}
