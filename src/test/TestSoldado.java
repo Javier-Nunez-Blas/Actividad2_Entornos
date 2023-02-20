@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import Requerimiento1.Soldado;
 
-class TestSoldado {
+	public class TestSoldado {
 	
 	private Soldado soldado1;
 	
@@ -46,7 +46,7 @@ class TestSoldado {
 	}
 		
 	//Test disparar
-	@Test
+	@Test	
 	public void disparaConBalas() {
 		Soldado soldado2 = new Soldado();
 		soldado1.setNumeroBalas(5);

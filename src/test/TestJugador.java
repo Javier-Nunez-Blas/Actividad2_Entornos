@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import Requerimiento2.Jugador;
 
-class TestJugador {
+public class TestJugador {
 
 	private Jugador jugador1;
 	

@@ -4,33 +4,32 @@ import java.util.Objects;
 
 /**
  * Esta clase define el objeto Jugador
- * @author: Ana Núñez Blas
- * @version: 18/02/2023/B
- * @see Visitar <a href = "https://github.com/fdepablo/WorkspaceJava/tree/master/20_JavaDocCapas" /> github.com – Repositorio de JavaDoc </a>
+ * @author Ana Nunez Blas
+ * @version 18/02/2023/B
  */
 
 public class Jugador {
 	
 	//Atributos de la clase
 	/**
-	* Número de dorsal del jugador
+	* Numero de dorsal del jugador
 	*/
 	private int dorsal;
 	/**
-	* Número de tarjetas amarillas del jugador
+	* Numero de tarjetas amarillas del jugador
 	*/
 	private int numeroTarjetasAmarillas;
 	/**
-	* Número de tarjetas rojas del jugador
+	* Numero de tarjetas rojas del jugador
 	*/
 	private int numeroTarjetasRojas;
 	
 	//Constructores
 	/**
-	* Constructor con tres parámetros
-	* @param dorsal: número de dorsal del jugador
-	* @param numeroTarjetasAmarillas: número de tarjtas amarillas
-	* @param numeroTarjetasRojas: número de tarjetas rojas
+	* Constructor con tres parametros
+	* @param dorsal numero de dorsal del jugador
+	* @param numeroTarjetasAmarillas: numero de tarjtas amarillas que posee el jugador
+	* @param numeroTarjetasRojas: numero de tarjetas rojas que posee el jugador
 	*/
 	public Jugador(int dorsal, int numeroTarjetasAmarillas, int numeroTarjetasRojas) {
 		super();
@@ -40,7 +39,7 @@ public class Jugador {
 	} // Cierre del constructor
 
 	/**
-	 * Constructor vacío, sin ningún parámetro
+	 * Constructor vacio, sin ningun parametro de la clase Jugador
 	 */
 	public Jugador() {
 		super();
@@ -48,54 +47,51 @@ public class Jugador {
 
 	//Métodos públicos Getters & setters
 	/**
-	 * Devuelve el número del dorsal del jugador
-	 * @return número dorsal
+	 * Metodo publico que devuelve el numero del dorsal del jugador
+	 * @return numero de dorsal del jugador
 	 */
 	public int getDorsal() {
 		return dorsal;
-	} //Cierre del métoo
+	} //Cierre del método
 	/**
-     * Modifica el número del dorsal del jugador
-     * @param dorsal
+     * Metodo publico que modifica el numero del dorsal del jugador
+     * @param  dorsal: numero de dorsal del jugador
      */
 	public void setDorsal(int dorsal) {
 		this.dorsal = dorsal;
-	} //Cierre del métoo
+	} //Cierre del método
 	/**
-     * Devuelve el número de tarjetas amarillas del jugador
-     * @return número de tarjetas amarillas
+     * Metodo publico que devuelve el numero de tarjetas amarillas del jugador
+     * @return numero de tarjetas amarillas que posee el jugador
      */
 	public int getNumeroTarjetasAmarillas() {
 		return numeroTarjetasAmarillas;
-	} //Cierre del métoo
+	} //Cierre del método
 	/**
-     * Modifica el número de tarjtas amarillas del jugador
-     * @param numeroTarjetasAmarillas
+     * Metodo que modifica el numero de tarjtas amarillas del jugador
+     * @param numeroTarjetasAmarillas numero de tarjetas amarillas del jugador
      */
 	public void setNumeroTarjetasAmarillas(int numeroTarjetasAmarillas) {
 		this.numeroTarjetasAmarillas = numeroTarjetasAmarillas;
 	} //Cierre del métoo
 	/**
-     * Devuelve el número de tarjetas rojas del jugador
-     * @return número de tarjetas rojas
+     * Metodo publico que devuelve el numero de tarjetas rojas del jugador
+     * @return numero de tarjetas rojas
      */
 	public int getNumeroTarjetasRojas() {
 		return numeroTarjetasRojas;
-	} //Cierre del métoo
+	} //Cierre del método
 	/**
-     * Modifica el número de tarjtas rojas del jugador
-     * @param numeroTarjetasRojas
+     * Metodo publico que modifica el numero de tarjtas rojas del jugador
+     * @param numeroTarjetasRojas: numero de tarjetas rojas que posee el jugador
      */
 	public void setNumeroTarjetasRojas(int numeroTarjetasRojas) {
 		this.numeroTarjetasRojas = numeroTarjetasRojas;
-	} //Cierre del métoo
+	} //Cierre del método
 
 	//toString
 	/**
-	 * Método público para sobreescribir el método toString de la clase Jugador
-	 * @param dorsal: número de dorsal del jugador
-	 * @param numeroTarjetasRojas: número de tarjetas rojas del jugador
-	 * @param numeroTarjetasAmarillas: número de tarjetas amarillas del jugador
+	 * Metodo publico para sobreescribir el metodo toString de la clase Jugador
 	 * @return devuelve todas las propiedades de la clase Jugador
 	 */
 	@Override
@@ -106,27 +102,21 @@ public class Jugador {
 	
 	//método hashCode
 	/**
-	 * Método público que compara si dos objetos son iguales mediante estructuras Hash.
-	 * Si los métodos hashcode() de cada objeto devuelven diferente hash no seguirá comparando y considerará 
-	 * a los objetos distintos. En el caso en el que ambos objetos compartan el mismo hashcode Java invocará
-	 * al método equals() y revisará a detalle si se cumple la igualdad.
-	 * @param dorsal: número de dorsal del jugador
-	 * @param numeroTarjetasAmarillas: número de tarjetas amarillas del jugador
-	 * @param numeroTarjetasRojas: número de tarjetas rojas del jugador
-	 * @return devuelve número entero
+	 * Metodo publico que compara si dos objetos son iguales mediante estructuras Hash.
+	 * Si los metodos hashcode() de cada objeto devuelven diferente hash no seguira comparando y considerara 
+	 * a los objetos distintos. En el caso en el que ambos objetos compartan el mismo hashcode Java invocara
+	 * al metodo equals() y revisara a detalle si se cumple la igualdad.
+	 * @return devuelve numero entero
 	 */
 	@Override
 	public int hashCode() {
 		return Objects.hash(dorsal, numeroTarjetasAmarillas, numeroTarjetasRojas);
-	} //Cierre del métoo
+	} //Cierre del método
 
 	//método equals
 	/**
-	 * Método público para saber si dos objetos de la clase Jugador son del mismo tipo y tienen los
-	 * mismos valores, por lo tanto si son iguales
-	 * @param dorsal número de dorsal del jugador
-	 * @param numeroTarjetasAmarillas número de tarjetas amarillas del jugador
-	 * @param numeroTarjetasRojas número de tarjetas rojas del jugador
+	 * Metodo publico que devuelve boolean (true o false) para saber si dos objetos de la clase Jugador son del mismo tipo 
+	 * y tienen los mismos valores, por lo tanto si son iguales
 	 * @return <ul>
 	 * 		   <li>true: los objetos son iguales </li>
 	 *   	   <li>false: los objetos son diferentes </li>
@@ -143,13 +133,13 @@ public class Jugador {
 		Jugador other = (Jugador) obj;
 		return dorsal == other.dorsal && numeroTarjetasAmarillas == other.numeroTarjetasAmarillas
 				&& numeroTarjetasRojas == other.numeroTarjetasRojas;
-	} //Cierre del métoo
+	} //Cierre del método
 	
 	/**
-	* Método público que devuelve un número de dorsal para el jugador, si está es mayor o igual a 1 ó
-	* igual a 30 el jugador está dentro del equipo y podrá jugar.
-	* De lo contrario se habrá producido un error.
-	* @param dorsal número de dorsal del jugador
+	* Metodo publico que devuelve un numero de dorsal para el jugador, si está es mayor o igual a uno o
+	* igual a 30 el jugador esta dentro del equipo y podra jugar. De lo contrario se habra producido un 
+	* error.
+	* @param dorsal: numero de dorsal del jugador
 	* 
 	*/
 	public void ponerDorsal(int dorsal) {
@@ -161,15 +151,15 @@ public class Jugador {
 	} //Cierre del método
 	
 	/**
-	* Método público que devuelve boolean (true o false) que indica si el jugador está expulsado en función de 
+	* Metodo publico que devuelve boolean (true o false) indica si el jugador esta expulsado en función de 
 	* las tarjetas que haya recibido durante el partido.
-	* Será expulsado cuando haya recibido dos tarjtas amarillas o una tarjeta roja.
-	* De lo contrario, si no ha recibido dichas tarjetas podrá jugar.
-	* @param numeroTarjetasAmarillas número de tarjetas amarillas del jugador
-	* @param numeroTarjetasRojas número de tarjetas rojas del jugador
+	* Sera expulsado cuando haya recibido dos tarjtas amarillas o una tarjeta roja.
+	* De lo contrario, si no ha recibido dichas tarjetas podra jugar.
+	* @param numeroTarjetasAmarillas: numero de tarjetas amarillas del jugador
+	* @param numeroTarjetasRojas: numero de tarjetas rojas del jugador
 	* @return <ul>
-    * 		  <li>true: el jugador está expulsado </li>
-    *   	  <li>false: el jugador puede continuar el partido, no está expulsado</li>
+    * 		  <li>true: el jugador esta expulsado del partido </li>
+    *   	  <li>false: el jugador puede continuar el partido, no esta expulsado</li>
     *  	 	  </ul>
 	*/
 	public boolean estaExpulsado() {
