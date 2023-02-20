@@ -9,18 +9,18 @@ public class Jugador {
 
 /*
 * Declaramos atributos privados 
-* @return
+* 
+*/
         private int dorsal;
 
         private int numeroTarjetasAmarillas;
 
         private int numeroTarjetasRojas;
 
-}
 
 /*
 * Se crean los métodos getter and setter 
-
+*/
 public int getDorsal() {
 	return dorsal;
 }
@@ -37,12 +37,10 @@ public int getNumerotarjetasRojas() {
 	return numeroTarjetasRojas;
 }
 public void setNumeroTrajetasRojas(int numeroTarjetasRojas) {
-	this.numerotarjetasRojas = numeroTarjetasRojas;
+	this.numeroTarjetasRojas = numeroTarjetasRojas;
 	
 }
 
-*/
-* 
 public void ponerDorsal(int dorsal) {
 
     if(dorsal >= 1 && dorsal <= 30) {
